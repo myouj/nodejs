@@ -1,0 +1,17 @@
+{
+    "name": "node-route",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "exceljs": "^1.6.2",
+        "koa": "^2.7.0",
+        "koa-router": "^7.4.0",
+        "xlsx": "^0.14.3"
+    }
+}
