@@ -20,17 +20,19 @@ router.get('/', async (ctx) => {
     //执行查询语句
     const [data, fields] = await connection.execute('SELECT * FROM `tbl_user`');
     ctx.set('Content-Type', 'application/json;charset="utf-8"');
+    console.log(data);
     ctx.body = data;
 });
 
 router.get('/getDataByPool', async (ctx) => {
     const [data, fields] = await pool.execute('SELECT * FROM `tbl_user`');
     ctx.set('Content-Type', 'application/json;charset="utf-8"');
+    
     ctx.body = data;
 });
 
 app.use(router.routes()).use(router.allowedMethods());
 
-app.listen(8080, () => {
+app.listen(8081, () => {
     console.log("Server start at 127.0.0.1:8080");
 })
