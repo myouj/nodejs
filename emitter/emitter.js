@@ -1,3 +1,6 @@
+/**
+ * 发布与订阅
+ */
 const EventEmitter = require('events');
 const emitter = new EventEmitter;
 
